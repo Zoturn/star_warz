@@ -8,7 +8,7 @@ header {
 header #logo {
   height: 100px;
   margin: 100px 0 0 -100px;
-  transition: all 3s linear;
+  transition: all 1.5s linear;
 }
 header .rollOut {
   transform: translate(50vw) rotate(360deg) scale(2);
