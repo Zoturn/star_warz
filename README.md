@@ -1,2 +1,1 @@
 # star_warz
-link
