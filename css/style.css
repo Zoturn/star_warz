@@ -1,0 +1,57 @@
+@font-face {
+  font-family: Oswald;
+  src: url("../fonts/Oswald-Regular.ttf");
+}
+header {
+  padding-top: 20px;
+}
+header #logo {
+  height: 100px;
+  margin: 100px 0 0 -100px;
+  transition: all 3s linear;
+}
+header .rollOut {
+  transform: translate(50vw) rotate(360deg) scale(2);
+  margin: 50px 50px 50px -50px !important;
+}
+#pers {
+  padding: 10px;
+  background: url("../images/star_wars_bg.jpg");
+  background-position: center;
+  background-size: cover;
+}
+section h2 {
+  font-size: 32px;
+  font-family: "Oswald";
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  margin: 0 auto 10px;
+}
+#pers_section {
+  background: rgba(255,255,255,0.5);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 70%;
+  margin: 0 auto;
+  padding: 10px;
+}
+#pers_section .pers {
+  background: #fff right;
+  width: 30%;
+  border: 1px solid #000;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+#pers_section .pers input {
+  float: right;
+  margin-top: 2.5px;
+}
+footer {
+  background-color: #fafafa;
+  padding: 75px 10px 75px 74px;
+  text-align: center;
+}
