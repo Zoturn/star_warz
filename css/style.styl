@@ -2,6 +2,9 @@
     font-family Oswald
     src url(../fonts/Oswald-Regular.ttf)
 
+*
+    font-family "Oswald"
+
 //HEADER
 
 header
@@ -21,41 +24,52 @@ header
     background url(../images/star_wars_bg.jpg)
     background-position center
     background-size cover
-
-section
     h2
         font-size 32px
-        font-family "Oswald"
         color rgb(255, 255, 255)
         font-weight bold
         text-transform uppercase
         line-height 1.2
         text-align center
         margin 0 auto 10px
-
-#pers_section
-    background rgba(255, 255, 255, 0.5)
-    display flex
-    justify-content space-between
-    flex-wrap wrap
-    width 70%
-    margin 0 auto
-    padding 10px
-    .pers
-        background rgb(255, 255, 255)right
-        width 30%
-        border 1px solid black
-        margin-bottom 10px
-        padding 5px
-        input
-            float right
-            margin-top 2.5px
+    #loader
+        height 40px
+        width 55%
+        margin 0 auto
+        #loader_inner
+            height 40px
+            width 0px
+            color black
+            font-weight bold
+            background lightgoldenrodyellow
+            opacity 0.8
+            text-align center
+            line-height 40px
+            margin 0 auto
+    #pers_section
+        background rgba(255, 255, 255, 0.5)
+        display none
+        justify-content space-between
+        flex-wrap wrap
+        width 70%
+        margin 0 auto
+        padding 10px
+        .pers
+            background rgb(255, 255, 255)right
+            width 30%
+            border 1px solid black
+            margin-bottom 10px
+            padding 5px
+            input
+                float right
+                margin-top 2.5px
 
 @media(max-width 800px)
-    #pers_section
-        .pers
-            width 80%
-            margin 0 auto
+    #pers
+        #pers_section
+            .pers
+                width 80%
+                margin 5px auto
 
     //FOOTER
 

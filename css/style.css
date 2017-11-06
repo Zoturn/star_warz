@@ -2,6 +2,9 @@
   font-family: Oswald;
   src: url("../fonts/Oswald-Regular.ttf");
 }
+* {
+  font-family: "Oswald";
+}
 header {
   padding-top: 20px;
 }
@@ -20,9 +23,8 @@ header .rollOut {
   background-position: center;
   background-size: cover;
 }
-section h2 {
+#pers h2 {
   font-size: 32px;
-  font-family: "Oswald";
   color: #fff;
   font-weight: bold;
   text-transform: uppercase;
@@ -30,30 +32,46 @@ section h2 {
   text-align: center;
   margin: 0 auto 10px;
 }
-#pers_section {
+#pers #loader {
+  height: 40px;
+  width: 55%;
+  margin: 0 auto;
+}
+#pers #loader #loader_inner {
+  height: 40px;
+  width: 0px;
+  color: #000;
+  font-weight: bold;
+  background: #fafad2;
+  opacity: 0.8;
+  text-align: center;
+  line-height: 40px;
+  margin: 0 auto;
+}
+#pers #pers_section {
   background: rgba(255,255,255,0.5);
-  display: flex;
+  display: none;
   justify-content: space-between;
   flex-wrap: wrap;
   width: 70%;
   margin: 0 auto;
   padding: 10px;
 }
-#pers_section .pers {
+#pers #pers_section .pers {
   background: #fff right;
   width: 30%;
   border: 1px solid #000;
   margin-bottom: 10px;
   padding: 5px;
 }
-#pers_section .pers input {
+#pers #pers_section .pers input {
   float: right;
   margin-top: 2.5px;
 }
 @media (max-width: 800px) {
-  #pers_section .pers {
+  #pers #pers_section .pers {
     width: 80%;
-    margin: 0 auto;
+    margin: 5px auto;
   }
 }
 footer {
